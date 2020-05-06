@@ -1,0 +1,57 @@
+<md-dialog id="MAP_DIALOG">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>Map Selection dialog</h2>
+        </div>
+    </md-toolbar>
+    <md-dialog-content>
+        <md-content layout-gt-sm="row">
+            <div>
+                <md-input-container>
+                    <label>Circle Centre Latitude</label>
+                    <input
+                        ng-model="mdc.circlePolygon.lat"
+                        ng-change="mdc.circleChanged()">
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Circle Centre Long</label>
+                    <input
+                        ng-model="mdc.circlePolygon.long"
+                        ng-change="mdc.circleChanged()">
+                </md-input-container>
+
+                <md-slider-container>
+                    <label>Circle Radius (m)</label>
+                    <md-slider min="1" max="10000" ng-model="mdc.circlePolygon.radius" aria-label="red" id="red-slider"
+                                class="md-warn" ng-change="mdc.circleChanged()">
+                    </md-slider>
+                    <md-input-container>
+                        <input ng-change="mdc.circleChanged()" type="number" ng-model="mdc.circlePolygon.radius" aria-label="red" aria-controls="red-slider">
+                    </md-input-container>
+                </md-slider-container>
+
+                <md-slider-container>
+                    <label>Circle no. of edges</label>
+                    <md-slider min="3" max="99" ng-model="mdc.circlePolygon.numberOfEdges" aria-label="red" id="red-slider"
+                                class="md-warn" ng-change="mdc.circleChanged()">
+                    </md-slider>
+                    <md-input-container>
+                        <input ng-change="mdc.circleChanged()" type="number" ng-model="mdc.circlePolygon.numberOfEdges" aria-label="red" aria-controls="red-slider">
+                    </md-input-container>
+                </md-slider-container>
+
+            </div>
+        </md-content>
+        <div id="map"></div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+        <span flex></span>
+        <md-button ng-click="mdc.dialogClose()">
+            Cancel
+        </md-button>
+        <md-button ng-click="mdc.dialogSubmit()">
+            Select Coordinates
+        </md-button>
+      </md-dialog-actions>
+</md-dialog>
