@@ -1,1 +1,0 @@
-angular.module('mapComponent.demo', ['ngRoute'])
