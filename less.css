@@ -1,6 +1,22 @@
 #map {
   height: 400px;
 }
+#GEOJSON_INPUT_FIELD {
+  width: 500px;
+}
+#MAP_DIALOG {
+  max-height: 800px;
+  width: 800px;
+}
+.circle-tool {
+  padding: 10px;
+}
+.circle-radio-button {
+  padding-left: 10px;
+}
+#MAP_DIALOG .radius-input {
+  max-width: 80px;
+}
 
 body {
   font-size: 14px;
@@ -15,8 +31,5 @@ body .md-button.md-small {
   font-size: 10px;
   padding: 0 0;
   margin: 0;
-}
-#GEOJSON_INPUT_FIELD {
-  width: 500px;
 }
 
