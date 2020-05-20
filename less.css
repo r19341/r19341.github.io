@@ -15,7 +15,7 @@
   padding-left: 10px;
 }
 #MAP_DIALOG .radius-input {
-  max-width: 80px;
+  max-width: fit-content;
 }
 
 body {
