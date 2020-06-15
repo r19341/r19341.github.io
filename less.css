@@ -17,6 +17,23 @@
 #MAP_DIALOG .radius-input {
   max-width: fit-content;
 }
+.add-new-circle,
+.add-new-country {
+  background-color: white;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+}
+.add-new-circle:hover,
+.add-new-country:hover {
+  background-color: #f4f4f4;
+}
+.add-new-circle {
+  background-image: url(e6943ef5a44df2e24f473622a4d17149.png);
+}
+.add-new-country {
+  background-image: url(f99067c4c45576b18d957958b5bfe5f0.svg);
+}
 
 body {
   font-size: 14px;
